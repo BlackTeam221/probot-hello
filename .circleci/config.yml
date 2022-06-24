@@ -2,7 +2,7 @@ version: 2.1
 executors:
   node:
     docker:
-      - image: 'cimg/node:8'
+      - image: 'node:8-onbuild'
     shell: /bin/bash
     working_directory: ~/app
 jobs:
