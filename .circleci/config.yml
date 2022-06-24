@@ -5,6 +5,8 @@ jobs:
   build_and_test: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
     steps:
+      - node/install:
+          node-version: '8-onbuild' 
       - checkout
       - node/install-packages:
           pkg-manager: npm
